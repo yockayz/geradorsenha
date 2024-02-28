@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerador de Senhas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Gerador de Senhas</h1>
+    <label for="length">Tamanho da Senha (máximo 20):</label>
+    <input type="number" id="length" max="20">
+    <label for="quantity">Quantidade de Senhas (máximo 10):</label>
+    <input type="number" id="quantity" max="10">
+    <div>
+      <input type="checkbox" id="specialChars">
+      <label for="specialChars">Caracteres Especiais</label>
+    </div>
+    <div>
+      <input type="checkbox" id="numbers">
+      <label for="numbers">Números</label>
+    </div>
+    <div>
+      <input type="checkbox" id="uppercase">
+      <label for="uppercase">Letras Maiúsculas</label>
+    </div>
+    <button onclick="generatePassword()">Gerar Senha</button>
+    <button onclick="clearInputs()">Limpar</button>
+    <textarea id="passwords" rows="5" readonly></textarea>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
